@@ -1,0 +1,17 @@
+name: arnet_env
+channels:
+  - pytorch
+  - anaconda
+  - fastai
+  - conda-forge
+  - defaults
+dependencies:
+  - fastai=1.0.61=1
+  - fastprogress=1.0.0=pyh39e3cac_0
+  - flask=1.1.2=py_0
+  - jupyterlab
+  - pip:
+    - geffnet==1.0.0
+    - lpips==0.1.3
+    - torch==1.7.1
+
