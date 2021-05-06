@@ -73,6 +73,11 @@ def get_DIV2k_data(pLow, pFull, bs: int, sz: int):
     data.c = 3
     return data
 
+def get_DIV2k_data_Test(pLow, pFull, bs: int, sz: int):
+    src = ImageImageList.from_folder(pLow, presort=True).split_by_idxs(
+        train_idx=list(range(0, 800)), valid_idx=list(range(800, 900)))
+    
+    print(src)
 
 def get_DIV2k_data_QF(pLow, pFull, bs: int, sz: int):
     """Given the path of low resolution images
